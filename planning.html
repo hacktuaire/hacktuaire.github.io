@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Rochd" />
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Accueil
+  </a>
+</li>
+<li>
+  <a href="sujet.html">
+    <span class="fa fa-eye"></span>
+     
+    Sujet
+  </a>
+</li>
+<li>
+  <a href="livrables.html">
+    <span class="fa fa-cart-plus"></span>
+     
+    Livrable
+  </a>
+</li>
+<li>
+  <a href="prix.html">
+    <span class="fa fa-shopping-basket"></span>
+     
+    Prix
+  </a>
+</li>
+<li>
+  <a href="planning.html">
+    <span class="fa fa-calendar"></span>
+     
+    Planning
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://allianz.bluekiwi.net/space/in/Support_controles/home">
+    <span class="fa fa-question-circle"></span>
+     
+    A propos
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<script src="site_libs/bootstrap-3.3.0/js/bootstrap.min.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="container">
+
+<h2>
+Organisation
+</h2>
+<p class="lead">
+Cet agenda vous permettra de suivre l’organisation de l’évenement!
+</p>
+<hr />
+<div class="alert alert-dismissible alert-success">
+<div class="table-responsive">
+<table class="table table-condensed table-bordered">
+<thead class="thead-dark">
+<tr>
+<th>
+Date
+</th>
+<th>
+Time
+</th>
+<th>
+Event
+</th>
+</tr>
+</thead>
+<tbody>
+<!-- Single event in a single day -->
+<tr>
+<td class="agenda-date" class="active" rowspan="5">
+<div class="dayofmonth">
+3
+</div>
+<div class="dayofweek">
+Jeudi
+</div>
+<div class="shortdate text-muted">
+Mai, 2018
+</div>
+</td>
+<td class="agenda-time">
+9h30
+</td>
+<td class="agenda-events">
+<div class="agenda-event">
+<p>Accueil des équipes et des invités<br> Discours d’ouverture<br> Présentation du sujet et réponse aux questions<br> Signature de la convention du traitement des données<br> Distribution des clés USB aux équipes</p>
+</div>
+</td>
+</tr>
+<tr>
+<td class="agenda-time">
+10h00
+</td>
+<td class="agenda-events">
+<div class="agenda-event">
+<p>Début de la compétition</p>
+</div>
+</td>
+</tr>
+<tr>
+<td class="agenda-time">
+12h30
+</td>
+<td class="agenda-events">
+<div class="agenda-event">
+<p>Déjeuner</p>
+</div>
+</td>
+</tr>
+<tr>
+<td class="agenda-time">
+13h30
+</td>
+<td class="agenda-events">
+<div class="agenda-event">
+<p>Reprise</p>
+</div>
+</td>
+</tr>
+<tr>
+<td class="agenda-time">
+Après-midi
+</td>
+<td class="agenda-events">
+<div class="agenda-event">
+<p>Les équipes sont invitées à aller voir des experts pour avoir des conseils</p>
+</div>
+</td>
+</tr>
+<!-- Multiple events in a single day (note the rowspan) -->
+<tr>
+<td class="agenda-date" class="active" rowspan="6">
+<div class="dayofmonth">
+4
+</div>
+<div class="dayofweek">
+Vendredi
+</div>
+<div class="shortdate text-muted">
+Mai, 2018
+</div>
+</td>
+<td class="agenda-time">
+10h00
+</td>
+<td class="agenda-events">
+<div class="agenda-event">
+<p>Reprise de la compétition</p>
+</div>
+</td>
+</tr>
+<tr>
+<td class="agenda-time">
+12h30
+</td>
+<td class="agenda-events">
+<div class="agenda-event">
+<p>Déjeuner</p>
+</div>
+</td>
+</tr>
+<tr>
+<td class="agenda-time">
+13h30
+</td>
+<td class="agenda-events">
+<div class="agenda-event">
+<p>Reprise</p>
+</div>
+</td>
+</tr>
+<tr>
+<td class="agenda-time">
+16h00
+</td>
+<td class="agenda-events">
+<div class="agenda-event">
+<p>Fin de la compétition et toutes les équipes s’assurent de la synchronisation<br> des dossiers sur Dropbox (ou à défaut rendent les clés USB)<br> Le jury prend connaissance des livrables pendant 30 mn</p>
+</div>
+</td>
+</tr>
+<tr>
+<td class="agenda-time">
+16h30
+</td>
+<td class="agenda-events">
+<div class="agenda-event">
+<p>Début des présentations</p>
+</div>
+</td>
+</tr>
+<tr>
+<td class="agenda-time">
+17h30
+</td>
+<td class="agenda-events">
+<div class="agenda-event">
+<p>Fin des présentations</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<script src="footer.js"></script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
