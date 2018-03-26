@@ -249,9 +249,9 @@ $(document).ready(function () {
 </div>
 
 
-<center>
-<img src="images/banniere.jpg" />
-</center>
+<!--
+<center>![](images/banniere.jpg)</center>
+-->
 <p><br></p>
 <div class="jumbotron">
 <center>
@@ -272,6 +272,46 @@ L’événement qui rassemble les passionnés d’actuariat et de data science!
 </center>
 <center>
 <p><strong>Compte à rebours</strong></p>
+<center>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 3, 2018 08:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "j " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+<div class="alert alert-dismissible alert-warning">
+<h4 class="alert-heading">
+Compte à rebours
+</h4>
+<h2 id="demo" class="display-3">
+41j 17h 1m 23s
+</h2>
+</div>
+</center>
 <iframe width="700" height="100%" src="clock/h/a.html" frameborder="0" scrolling="no">
 </iframe>
 </center>
