@@ -23,8 +23,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -34,12 +34,10 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
 }
 </script>
 
@@ -347,9 +345,13 @@ div.tocify {
 </div>
 
 
+<center>
+<img src="images/banniere.jpg" />
+</center>
+<p><br></p>
 <div id="prix" class="section level1">
 <h1>Prix</h1>
-<p>Différents prix seront attribués, et vous avez toutes les chances d’exceller dans un domaine! Pour chaque prix, un chèque de 700€ sera attribué à l’équipe gagante.</p>
+<p>Différents prix seront attribués, et vous avez toutes les chances d’exceller dans un domaine! Pour chaque prix, un chèque de 700€ sera attribué à l’équipe gagnante.</p>
 <div class="panel panel-success">
 <div class="panel-heading">
 <h3 class="panel-title">
@@ -392,7 +394,8 @@ Meilleure visualisation
 <div class="panel-body">
 <p>L’équipe qui aura présenté la meilleure visualisation de ses résultats remportera ce prix! Les critères récompensés seront :</p>
 <ul>
-<li>La pertinence du tableau de bord</li>
+<li>La création d’un tableau de bord</li>
+<li>La pertinence des graphiques pour les informations à visualiser</li>
 <li>La meilleure exploitation et appropriation des outils de visualisation</li>
 </ul>
 <p>A la clé : un chèque de 700€.</p>
@@ -443,9 +446,9 @@ Les participants recevront des explications complémentaires.
 <h1>Jury</h1>
 <p>Le jury qui délibèrera sera constitué de 8 personnes:</p>
 <ul>
-<li>membres de l’IA</li>
-<li>membres de Allianz</li>
-<li>membres de Caritat</li>
+<li>Membres de l’Institut des Actuaires</li>
+<li>Membres de Allianz</li>
+<li>Membres de Caritat</li>
 </ul>
 </div>
 <div id="soiree-de-remise-des-prix" class="section level1">
@@ -490,10 +493,10 @@ Les participants recevront des explications complémentaires.
 
 <center>
 
-<img src="images/logos/Allianz.jpg" alt="Logo Allianz" style="width:auto;height:58px;">
-<img src="images/logos/Caritat.png" alt="Logo Caritat" style="width:auto;height:58px;">    
-<img src="images/logos/Isup.jpg" alt="Logo ISUP" style="width:auto;height:58px;">
-<img src="images/logos/Upmc.jpg" alt="Logo UPMC" style="width:auto;height:58px;">
+<img src="images/Logos/Allianz.jpg" alt="Logo Allianz" style="width:auto;height:58px;">
+<img src="images/Logos/Caritat.png" alt="Logo Caritat" style="width:auto;height:58px;">    
+<img src="images/Logos/Isup.jpg" alt="Logo ISUP" style="width:auto;height:58px;">
+<img src="images/Logos/Upmc.jpg" alt="Logo UPMC" style="width:auto;height:58px;">
 <br>
 <p><strong>Hack'tuaire! - Hackathon organisé par Allianz, Caritat et ISUP</strong></p>
 

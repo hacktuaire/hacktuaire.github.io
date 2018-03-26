@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -31,12 +31,10 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
 }
 </script>
 
@@ -250,18 +248,21 @@ $(document).ready(function () {
 
 
 <!--
-<center>![](images/banniere.jpg)</center>
+
 -->
+<center>
+<img src="images/banniere.jpg" />
+</center>
 <p><br></p>
 <div class="jumbotron">
 <center>
 <h1 class="display-3">
-Salut les hack’tuaires!
+Salut les Hack’tuaires!
 </h1>
 </center>
 <center>
 <p class="lead">
-L’ISUP en partenariat avec le Groupe Allianz invite les étudiants en actuariat, data science et informatique à son hackathon les <strong>03 et 04 Mai 2018</strong>.
+L’ISUP en partenariat avec Allianz et Caritat invite les étudiants en actuariat, data science et informatique à son hackathon les <strong>3 et 4 Mai 2018</strong>.
 </p>
 </center>
 <hr class="my-4">
@@ -271,7 +272,7 @@ L’événement qui rassemble les passionnés d’actuariat et de data science!
 </p>
 </center>
 <center>
-<p><strong>Compte à rebours</strong></p>
+<p><strong>Début de l’aventure dans : </strong></p>
 <center>
 <script>
 // Set the date we're counting down to
@@ -304,9 +305,6 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 <div class="alert alert-dismissible alert-warning">
-<h4 class="alert-heading">
-Compte à rebours
-</h4>
 <h2 id="demo" class="display-3">
 41j 17h 1m 23s
 </h2>
@@ -317,26 +315,11 @@ Compte à rebours
 </center>
 </div>
 <div>
-Hack’tuaire est un hackathon orienté actuariat/data science qui rassemble les étudiants issus de formations actuarielles, data science et informatiques autour d’une problématique proposée par Allianz, leader mondial de l’assurance. L’objectif est de produire, en équipe ou individuellement, une analyse rigoureuse à partir du jeu de données fourni puis de la présenter devant un jury qui remettra les différents prix.<br> Alors rejoignez-nous à la Tour Allianz-Neptune pour 48h de créativité, d’échanges et surtout de fun !<br> <br> Ne perdez plus une seconde et allez vous renseigner sur :<br>
+<p>Hack’tuaire est un hackathon orienté actuariat/data science qui rassemble les étudiants issus de formations actuarielles, data science et informatiques autour d’une problématique proposée par Allianz, leader mondial de l’assurance. L’objectif est de produire, en équipe ou individuellement, une analyse rigoureuse à partir du jeu de données fourni puis de la présenter devant un jury qui remettra les différents prix.<br> Alors rejoignez-nous à la Tour Allianz-Neptune pour 48h de créativité, d’échanges et surtout de fun !<br> <br> Ne perdez plus une seconde et allez vous renseigner sur :</p>
 <ul>
-<li>
-Le sujet
-</li>
-<li>
-Les livrables
-</li>
-<li>
-Le jury et les experts
-</li>
-<li>
-Les prix
-</li>
-<li>
-Le planning
-</li>
-<li>
-Les informations pratiques
-</li>
+<li><a href="2018_sujet.html">Le sujet</a></li>
+<li><a href="2018_prix.html">Les prix</a></li>
+<li><a href="2018_planning.html">Le planning</a></li>
 </ul>
 </div>
 <!--
@@ -435,10 +418,10 @@ var x = setInterval(function() {
 
 <center>
 
-<img src="images/logos/Allianz.jpg" alt="Logo Allianz" style="width:auto;height:58px;">
-<img src="images/logos/Caritat.png" alt="Logo Caritat" style="width:auto;height:58px;">    
-<img src="images/logos/Isup.jpg" alt="Logo ISUP" style="width:auto;height:58px;">
-<img src="images/logos/Upmc.jpg" alt="Logo UPMC" style="width:auto;height:58px;">
+<img src="images/Logos/Allianz.jpg" alt="Logo Allianz" style="width:auto;height:58px;">
+<img src="images/Logos/Caritat.png" alt="Logo Caritat" style="width:auto;height:58px;">    
+<img src="images/Logos/Isup.jpg" alt="Logo ISUP" style="width:auto;height:58px;">
+<img src="images/Logos/Upmc.jpg" alt="Logo UPMC" style="width:auto;height:58px;">
 <br>
 <p><strong>Hack'tuaire! - Hackathon organisé par Allianz, Caritat et ISUP</strong></p>
 

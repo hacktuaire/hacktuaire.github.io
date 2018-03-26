@@ -23,8 +23,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -34,12 +34,10 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
 }
 </script>
 
@@ -347,6 +345,10 @@ div.tocify {
 </div>
 
 
+<center>
+<img src="images/banniere.jpg" />
+</center>
+<p><br></p>
 <div id="theme-et-donnees" class="section level1">
 <h1>Thème et données</h1>
 <p><strong>Détection d’anomalies dans les coefficients de réduction-majoration (CRM) ou bonus-malus renseignés à la souscription d’un contrat automobile.</strong></p>
@@ -365,12 +367,12 @@ div.tocify {
 <h1>Livrable</h1>
 <p>Après ces 2 jours de travail intense, il vous faudra fournir (via une clé USB qui vous sera confiée en début de compétition) un dossier avec une organisation claire des éléments suivants:</p>
 <ul>
-<li>Script (R Markdown, Jupyter Notebook, R, Python, HTML, etc.)</li>
-<li>Fichiers de sortie (CSV, HTML, etc.)</li>
-<li>Présentation des résultats: tableau de bord avec D3.js, Flexdashboard (R), Bokeh ou Dash (Python).</li>
+<li>Script (RMarkdown, Jupyter Notebook, R, Python, etc.)</li>
+<li>Fichiers de sortie générés à partir des scripts (CSV, HTML, etc.)</li>
+<li>La création d’un tableau de bord sera un plus (surtout pour les prix “meilleure visualisation” et “meilleure présentation”): par exemple, tableau de bord avec D3.js, Flexdashboard (R), Bokeh ou Dash (Python).</li>
 </ul>
 <p>Il est important de bien présenter la démarche méthodologique de façon structurée, claire et logique.</p>
-<p>La création du support de présentation doit être efficace. Les outils de visualisation conseillés, mais non imposés, sont Revealjs ou Beamer. Inutile donc de vous embêter à créer de “jolies” présentations PowerPoint!</p>
+<p>La création du support de présentation doit être efficace. Les outils conseillés sont Revealjs ou Beamer. Inutile donc de vous embêter à créer de “jolies” présentations PowerPoint!</p>
 <p>A la clôture de l’évènement, il vous sera demandé de détruire les données présentes sur la clé. Avant le début de la compétition, nous vous ferons au préalable signé une charte légale attestant sur votre honneur que vous vous engagerez à le faire. Pour prendre connaissance de cette charte, consultez la rubrique règlement.</p>
 </div>
 <div id="experts" class="section level1">
@@ -416,10 +418,10 @@ div.tocify {
 
 <center>
 
-<img src="images/logos/Allianz.jpg" alt="Logo Allianz" style="width:auto;height:58px;">
-<img src="images/logos/Caritat.png" alt="Logo Caritat" style="width:auto;height:58px;">    
-<img src="images/logos/Isup.jpg" alt="Logo ISUP" style="width:auto;height:58px;">
-<img src="images/logos/Upmc.jpg" alt="Logo UPMC" style="width:auto;height:58px;">
+<img src="images/Logos/Allianz.jpg" alt="Logo Allianz" style="width:auto;height:58px;">
+<img src="images/Logos/Caritat.png" alt="Logo Caritat" style="width:auto;height:58px;">    
+<img src="images/Logos/Isup.jpg" alt="Logo ISUP" style="width:auto;height:58px;">
+<img src="images/Logos/Upmc.jpg" alt="Logo UPMC" style="width:auto;height:58px;">
 <br>
 <p><strong>Hack'tuaire! - Hackathon organisé par Allianz, Caritat et ISUP</strong></p>
 
