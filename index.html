@@ -187,40 +187,52 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="sujet.html">
+  <a href="2018_sujet.html">
     <span class="fa fa-eye"></span>
      
     Sujet
   </a>
 </li>
 <li>
-  <a href="livrables.html">
-    <span class="fa fa-cart-plus"></span>
-     
-    Livrable
-  </a>
-</li>
-<li>
-  <a href="prix.html">
+  <a href="2018_prix.html">
     <span class="fa fa-shopping-basket"></span>
      
     Prix
   </a>
 </li>
 <li>
-  <a href="planning.html">
+  <a href="2018_planning.html">
     <span class="fa fa-calendar"></span>
      
     Planning
   </a>
 </li>
+<li>
+  <a href="2018_inscription.html">
+    <span class="fa fa-pencil"></span>
+     
+    Inscription
+  </a>
+</li>
+<li>
+  <a href="2018_organisation.html">
+    <span class="fa fa-group"></span>
+     
+    Organisation
+  </a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://allianz.bluekiwi.net/space/in/Support_controles/home">
-    <span class="fa fa-question-circle"></span>
+  <a href="index.html">
+    <span class="fa fa-facebook-square"></span>
      
-    A propos
+  </a>
+</li>
+<li>
+  <a href="index.html">
+    <span class="fa fa-twitter-square"></span>
+     
   </a>
 </li>
       </ul>
@@ -237,9 +249,9 @@ $(document).ready(function () {
 </div>
 
 
-<!--
-<center>![](images/banniere.jpg)</center>
--->
+<center>
+<img src="images/banniere.jpg" />
+</center>
 <p><br></p>
 <div class="jumbotron">
 <center>
@@ -247,52 +259,21 @@ $(document).ready(function () {
 Salut les hack’tuaires!
 </h1>
 </center>
+<center>
 <p class="lead">
-L’ISUP en partenariat avec le Groupe Allianz invite les étudiants en actuariat, data science et informatique à son hackathon les 03 et 04 Mai 2018.
+L’ISUP en partenariat avec le Groupe Allianz invite les étudiants en actuariat, data science et informatique à son hackathon les <strong>03 et 04 Mai 2018</strong>.
 </p>
+</center>
 <hr class="my-4">
+<center>
 <p>
 L’événement qui rassemble les passionnés d’actuariat et de data science!
 </p>
+</center>
 <center>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 3, 2018 08:30:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "j " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-</script>
-<div class="alert alert-dismissible alert-warning">
-<h4 class="alert-heading">
-Compte à rebours
-</h4>
-<h2 id="demo" class="display-3">
-41j 17h 1m 23s
-</h2>
-</div>
+<p><strong>Compte à rebours</strong></p>
+<iframe width="700" height="100%" src="clock/h/a.html" frameborder="0" scrolling="no">
+</iframe>
 </center>
 </div>
 <div>
@@ -333,6 +314,47 @@ Les informations pratiques
   <div class="panel-heading"><h3 class="panel-title">Panel primary</h3></div>
   <div class="panel-body">Panel content</div>
 </div>
+
+
+
+<center>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 3, 2018 08:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "j " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+<div class="alert alert-dismissible alert-warning">
+ 
+  <h4 class="alert-heading">Compte à rebours</h4>
+  <h2 id="demo" class="display-3">41j 17h 1m 23s</h2>
+</div>
+</center>
+
 -->
 
 <div id="disqus_thread"></div>
@@ -372,10 +394,14 @@ Les informations pratiques
 </script>
 
 <center>
+
 <img src="images/logos/Allianz.jpg" alt="Logo Allianz" style="width:auto;height:58px;">
 <img src="images/logos/Caritat.png" alt="Logo Caritat" style="width:auto;height:58px;">    
 <img src="images/logos/Isup.jpg" alt="Logo ISUP" style="width:auto;height:58px;">
 <img src="images/logos/Upmc.jpg" alt="Logo UPMC" style="width:auto;height:58px;">
+<br>
+<p><strong>Hack'tuaire! - Hackathon organisé par Allianz, Caritat et ISUP</strong></p>
+
 </center>
 
 
