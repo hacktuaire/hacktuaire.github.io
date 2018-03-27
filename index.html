@@ -260,7 +260,7 @@ $(document).ready(function () {
 <img src="images/banniere.jpg" />
 </center>
 <p><br></p>
-<div class="jumbotron">
+<div class="jumbotron" style="display: table;margin: 0 auto;text-align: center;">
 <center>
 <h1 class="display-3">
 Salut les Hack’tuaires!
@@ -274,51 +274,10 @@ L’ISUP en partenariat avec Allianz et Caritat invite les étudiants en actuari
 <hr class="my-4">
 <center>
 <p>
-L’événement qui rassemble les passionnés d’actuariat et de data science!
+L’événement qui rassemble les passionnés d’actuariat et de data science!<br><strong>Début de l’aventure dans:</strong>
 </p>
 </center>
-<center>
-<strong>Début de l’aventure dans: </strong>
-</center>
-<center>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 3, 2018 08:30:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "j " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-</script>
-<div class="alert alert-dismissible alert-warning">
-<h2 id="demo" class="display-3">
-41j 17h 1m 23s
-</h2>
-</div>
-</center>
-<center>
-<div class="clock" style="margin:5em;">
+<div class="clock" style="margin: 5em;">
 
 </div>
 <script type="text/javascript">
@@ -336,11 +295,11 @@ var x = setInterval(function() {
 
                 // Instantiate a coutdown FlipClock
                 clock = $('.clock').FlipClock(diff, {
-                    clockFace: 'DailyCounter'
+                    clockFace: 'DailyCounter',
+                    language: 'fr'
                 });
             });
 </script>
-</center>
 </div>
 <div>
 <p>Hack’tuaire est un hackathon orienté actuariat/data science qui rassemble les étudiants issus de formations actuarielles, data science et informatiques autour d’une problématique proposée par Allianz, leader mondial de l’assurance. L’objectif est de produire, en équipe ou individuellement, une analyse rigoureuse à partir du jeu de données fourni puis de la présenter devant un jury qui remettra les différents prix.<br> Alors rejoignez-nous à la Tour Allianz-Neptune pour 48h de créativité, d’échanges et surtout de fun !<br> <br> Ne perdez plus une seconde et allez vous renseigner sur :</p>
