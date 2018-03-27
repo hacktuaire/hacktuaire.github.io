@@ -23,6 +23,10 @@
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+ <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+ <link rel="stylesheet" href="flipclock.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="flipclock.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -274,7 +278,8 @@ L’événement qui rassemble les passionnés d’actuariat et de data science!
 </p>
 </center>
 <center>
-<p><strong>Début de l’aventure dans : </strong></p>
+<strong>Début de l’aventure dans: </strong>
+</center>
 <center>
 <script>
 // Set the date we're counting down to
@@ -312,8 +317,29 @@ var x = setInterval(function() {
 </h2>
 </div>
 </center>
-<iframe width="700" height="100%" src="a.html" frameborder="0" scrolling="no">
-</iframe>
+<center>
+<div class="clock" style="margin:5em;">
+
+</div>
+<script type="text/javascript">
+            var clock;
+            $(document).ready(function() {
+
+                // Grab the current date
+                var currentDate = new Date();
+
+                // Set some date in the past. In this case, it's always been since Jan 1
+                var pastDate  = new Date("May 3, 2018 08:30:00");
+
+                // Calculate the difference in seconds between the future and current date
+                var diff = pastDate.getTime() / 1000-currentDate.getTime() / 1000;
+
+                // Instantiate a coutdown FlipClock
+                clock = $('.clock').FlipClock(diff, {
+                    clockFace: 'DailyCounter'
+                });
+            });
+</script>
 </center>
 </div>
 <div>
